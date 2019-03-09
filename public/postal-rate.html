@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Postal Rate Calculator </h1>
-    <form action="">
+    <form action="/rate" method="POST">
         <label for="item-weight">Item Weight</label>
-        <input type="text" name="item-weight">
+        <input type="text" name="weight">
         <label for="item-type">Item Type</label>
-        <select name="item-type" id="item-type">
+        <select name="type" id="item-type">
             <option value="letter-stamped">Letter (Stamped)</option>
             <option value="letter-metered">Letter (Metered)</option>
             <option value="large-envelope">Large Envelope (Flats)</option>
             <option value="first-class-package">First-Class Package Service - Retail</option>
         </select>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
